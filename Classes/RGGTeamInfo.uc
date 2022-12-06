@@ -1,0 +1,1 @@
+class RGGTeamInfo extends ROTeamInfo;

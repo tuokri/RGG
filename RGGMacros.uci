@@ -1,0 +1,6 @@
+`define RGGII_Katana 0
+
+`define rgglog(msg, cond, tag) \
+    `log(self.class.name $ "::" $ GetFuncName() $ "(): " $ `msg, \
+    `cond, \
+    `if(`tag) name("RGG-" $ string(`tag)) `else 'RGG' `endif)
