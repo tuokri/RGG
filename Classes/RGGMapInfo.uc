@@ -10,6 +10,7 @@ function InitRolesForGametype(class<GameInfo> GameTypeClass, int MaxPlayers, boo
     bInitializedRoles = true;
 }
 
+/*
 function PreLoadSharedContentForGameType()
 {
     local RORoleInfoClasses NorthPawnContentClasses;
@@ -38,6 +39,7 @@ function PreLoadSharedContentForGameType()
         SouthernTeamLeader.RoleInfo.PreLoadContent(SouthPawnContentClasses.LevelContentClasses, ROGRI.RoleInfoItemsIdx);
     }
 }
+*/
 
 function int GetNorthernNation()
 {
@@ -52,9 +54,13 @@ function int GetSouthernNation()
 static function int GetNationForArmy(byte ArmyIndex)
 {
     if (ArmyIndex >= 1)
+    {
         return 1;
+    }
     else
+    {
         return 0;
+    }
 }
 
 function int GetNumArmiesForTeam(byte TeamIndex)
@@ -69,7 +75,7 @@ DefaultProperties
     DefendingTeam32=DT_None
     DefendingTeam64=DT_None
 
-    SouthernForce=SFOR_ARVN
+       SouthernForce=SFOR_USArmy
     NorthernForce=NFOR_NVA
 
     NorthernRoles.Empty

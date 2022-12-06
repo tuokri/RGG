@@ -188,5 +188,5 @@ exec function SetSightZ(float NewZ)
 
 DefaultProperties
 {
-    // CharacterSceneTemplate=RGGUISceneCharacter''
+    CharacterSceneTemplate=RGGUISceneCharacter'RGG_Assets.UI.RGGUISceneCharacter'
 }
